@@ -73,20 +73,31 @@ canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275)
 
 //add band name text
 //add "the jesus" text
-canvas.drawText(message: "the jesus", at: Point(x: 15, y: 450), size: 42)
+canvas.drawText(message: "the jesus", at: Point(x: 15, y: 440), size: 42)
 //add "and mary chain" text
-canvas.drawText(message: "and mary chain", at: Point(x: 15, y: 405), size: 42)
+canvas.drawText(message: "and mary chain", at: Point(x: 15, y: 395), size: 42)
 
 //Add information about show
 //create constants for the y values of the rows
-let row1Y = 575
-let row2Y = 557
-let row3Y = 540
+let row1Y = 570
+let row2Y = 552
+let row3Y = 535
 
 //create constants for x values of columns
 let column1X = 15
 let column2X = 130
 let column3X = 275
+
+//show time information (left most block)
+canvas.drawText(message: "friday", at: Point(x: column1X, y: row1Y), size: 10)
+canvas.drawText(message: "december 4 1987", at: Point(x: column1X, y: row2Y), size: 10)
+canvas.drawText(message: "8 pm show", at: Point(x: column1X, y: row3Y), size: 10)
+
+//opening acts? (middle block)
+canvas.drawText(message: "with", at: Point(x: column2X, y:row1Y), size: 10)
+canvas.drawText(message: "social distortion", at: Point(x: column2X, y: row2Y), size: 10)
+canvas.drawText(message: "and opal", at: Point(x: column2X, y: row3Y), size: 10)
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
