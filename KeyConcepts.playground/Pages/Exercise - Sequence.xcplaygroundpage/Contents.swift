@@ -58,7 +58,16 @@ canvas.defaultBorderWidth = 100
 canvas.borderColor = lightRed
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 275, height: 275)
 
+//draw blue circe to overlap blue circle
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 100
+canvas.borderColor = lightBlue
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275)
 
+//add band name text
+//add "the jesus" text
+canvas.drawText(message: "the jesus", at: Point(x: 15, y: 450), size: 40)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
