@@ -45,12 +45,19 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 //canvas.drawShapesWithFill = false
 //canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
 
+//draw light grey rectangle that covers the entire page
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = grey
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
 //draw red circle with thick border and no fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
 canvas.defaultBorderWidth = 100
-canvas.borderColor = Color.red
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 250, height: 250)
+canvas.borderColor = lightRed
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 275, height: 275)
+
 
 /*:
  ## Template code
