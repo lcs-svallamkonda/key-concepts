@@ -48,26 +48,45 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 //draw light grey rectangle that covers the entire page
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
+//change color of rectangle
 canvas.fillColor = grey
+//actually draw rectangle
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 //draw red circle with thick border and no fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
 canvas.defaultBorderWidth = 100
+//change color of circle
 canvas.borderColor = lightRed
+//actually draw circle
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 275, height: 275)
 
 //draw blue circe to overlap blue circle
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
 canvas.defaultBorderWidth = 100
+//change color fo circle
 canvas.borderColor = lightBlue
+//actually draw circle
 canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275)
 
 //add band name text
 //add "the jesus" text
-canvas.drawText(message: "the jesus", at: Point(x: 15, y: 450), size: 40)
+canvas.drawText(message: "the jesus", at: Point(x: 15, y: 450), size: 42)
+//add "and mary chain" text
+canvas.drawText(message: "and mary chain", at: Point(x: 15, y: 405), size: 42)
+
+//Add information about show
+//create constants for the y values of the rows
+let row1Y = 575
+let row2Y = 557
+let row3Y = 540
+
+//create constants for x values of columns
+let column1X = 15
+let column2X = 130
+let column3X = 275
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
