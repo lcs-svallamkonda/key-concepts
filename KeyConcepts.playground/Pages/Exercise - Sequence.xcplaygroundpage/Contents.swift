@@ -98,6 +98,11 @@ canvas.drawText(message: "with", at: Point(x: column2X, y:row1Y), size: 10)
 canvas.drawText(message: "social distortion", at: Point(x: column2X, y: row2Y), size: 10)
 canvas.drawText(message: "and opal", at: Point(x: column2X, y: row3Y), size: 10)
 
+//location of show (right block)
+canvas.drawText(message: "hollywood paladium", at: Point(x: column3X, y: row1Y), size: 10)
+canvas.drawText(message: "6215 sunset blvd.", at: Point(x: column3X, y: row2Y), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x: column3X, y: row3Y), size: 10)
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
