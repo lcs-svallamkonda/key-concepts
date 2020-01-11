@@ -65,6 +65,32 @@ for counter in 0...7 {
 canvas.textColor = Color.white
 canvas.drawText(message: "sloan", at: Point(x: 150, y: 400), size: 90, kerning: 3)
 
+//Add information about show
+//create constants for the y values of the rows
+let row1Y = 570
+let row2Y = 552
+let row3Y = 535
+
+//create constants for x values of columns
+let column1X = 15
+let column2X = 150
+let column3X = 275
+
+//show time information (left most block)
+canvas.drawText(message: "saturday", at: Point(x: column1X, y: row1Y), size: 10)
+canvas.drawText(message: "december 19 1992", at: Point(x: column1X, y: row2Y), size: 10)
+canvas.drawText(message: "9 pm", at: Point(x: column1X, y: row3Y), size: 10)
+
+//opening acts? (middle block)
+canvas.drawText(message: "with", at: Point(x: column2X, y:row1Y), size: 10)
+canvas.drawText(message: "thrush hermit", at: Point(x: column2X, y: row2Y), size: 10)
+canvas.drawText(message: "the quahogs", at: Point(x: column2X, y: row3Y), size: 10)
+
+//location of show (right block)
+canvas.drawText(message: "camaro's cafe", at: Point(x: column3X, y: row1Y), size: 10)
+canvas.drawText(message: "halifax", at: Point(x: column3X, y: row2Y), size: 10)
+canvas.drawText(message: "nova scotia", at: Point(x: column3X, y: row3Y), size: 10)
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
